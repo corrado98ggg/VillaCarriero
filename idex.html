@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Villa Carriero</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='main.css'>
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"  
+        src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript"
+        src="js/stepcarousel.js">
+        
+            </script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+
+    <!-- header-->
+    <header class = "header" id = "header">
+        <div class="head-top">
+            <div class = "site-name">
+                <span>VILLA CARRIERO</span>
+            </div>
+
+            <div class ="site-nav">
+                <span id ="nav-btn">MENU
+                    <i class = "fas fa-bars"></i>
+                </span>
+            </div>
+        </div>
+
+
+        
+        <div class="head-bottom flex">
+            <h2>LA TUA CASA VACANZA!</h2>
+            <P> Indeciso su dove passare le tue vacanze?
+                <br>
+                Scopri di più su Villa Carriero.
+            </P>
+        </div>
+    </header>
+     <!-- end of header-->
+
+
+     <!--side navbar-->
+     <div class = "sidenav" id = "sidenav">
+         <span class="cancel-btn" id = "cancel-btn">
+             <i class ="fas fa-times"></i>
+         </span>
+
+
+
+         <ul class ="navbar">
+            <li><a href = "#header"> home </a></li>
+            <li><a href = "#services"> servizi </a></li>
+            <li><a href = "#maps"> dove siamo </a></li>
+            <li><a href = "#rooms"> appartamenti </a></li>
+            <li><a href = "#customers"> clienti </a></li>
+         </ul>
+
+
+     </div>
+     <!--end of side navbar-->
+
+
+      <!--fullscreen modal-->
+      <div id ="modal"></div>
+      <!-- end fullscreen modal-->
+
+
+
+      
+      <!--body content-->
+      <section class = "services sec-width" id = "services">
+        <div class = "mio">
+            <h2>DOVE ci troviamo?</h2>
+        </div>
+       
+        <div class="testo">
+            <p class="animated bounceInLeft"
+            style="
+              color: rgb(0, 0, 0); 
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-size: 28px;
+              text-align:left;
+              top: 1350px;
+              left: 1000px;">
+              Villa Carriero è localizzata in un punto strategico nel cuore del Salento. <br> 
+              Ad appena 6 km da lecce e 20 km dal mare Ionio (Porto Cesareo, 
+              Gallipoli, Santa Maria al bagno...) e dal mare Adriatico (Otranto, Torre dell'orso, San foca, Castro....).
+              <br>
+              La possibilità di transfert dall'aeroporto di Brindisi e dalla stazione ferroviaria di Lecce.
+    
+        </p>
+        </div>
+
+        <br>
+
+        <!--posizione google maps-->
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.9119394225327!2d18.09480761585553!3d40.32211187937631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1344288019fd0f2f%3A0xd41ea46c79044625!2sVia%20Isonzo%2C%2014%2C%2073047%20Monteroni%20di%20Lecce%20LE!5e0!3m2!1sen!2sit!4v1650208305331!5m2!1sen!2sit"
+            class="posizione">
+            </iframe>
+        
+
+        
+        <br>
+
+        <div class = "mio">
+            <h2>I NOSTRI SERVIZI:</h2>
+        </div>
+
+
+    <div class="testo2">
+        <p class="animated bounceInLeft"
+        style="
+          color: rgb(0, 0, 0); 
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 28px;
+          text-align:left;
+          top: 1350px;
+          left: 1000px;">
+          
+          Villa Carriero offre due bellissimi bilocali. <br>
+          Situati in una villa storica stimolate e sommersa nella natura, con parco giochi per i più piccoli e
+          piscina familiare per i più grandi. 
+          
+          <br><br>
+
+          La possibilità di affitto può variare da un breve periodo di minimo una settimana, fino a un lungo periodo di 6 mesi.
+    </p>
+    </div>
+
+    <br>
+
+      <!--foto dello slider-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="image/giardino.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="image/giostreV.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="image/piscina.jpeg" style="width:100%">
+    </div>
+  
+  </div>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+    <div class ="services-container" style="text-align: center;">
+        
+        <!--single services-->
+         <article class = "service">
+             <div class =" service-icon">
+                 <span>
+                     <i class = "fas fa-utensils"></i>
+                 </span>
+             </div>
+             <div class ="service-content">
+                 <h2>Cibo caratteristico:</h2>
+                 <P style="font-size:medium;
+                 text-align: right;">Possibilità di degustazioni <br> caratteristiche in giardino.</P>
+             </div>
+         </article>
+         <!--s end of single services-->
+
+         <br>
+
+         <!--single services-->
+         <article class = "service">
+            <div class =" service-icon">
+                <span>
+                    <i class="fas fa-fan"></i>
+                </span>
+            </div>
+            <div class ="service-content">
+                <h2>Aria condizionata:</h2>
+                <P style="font-size:medium;
+                text-align: right;">Ogni stanza del <br> bilocale è attrezzata di aria <br> condizionata, permettendo
+                    <br>
+                    ai nostri clienti
+                    <br>
+                    di stare al fresco o al caldo.</P>
+
+            </div>
+        </article>
+        <!--s end of single services-->
+
+        <br>
+
+          <!--single services
+        
+
+            profcarriero@virgilio.it
+            Corrado30
+        
+        
+        
+        
+        -->
+          <article class = "service">
+            <div class =" service-icon">
+                <span>
+                    <i class = "fas fa-car"></i>
+                </span>
+            </div>
+            <div class ="service-content">
+                <h2>Posto auto scoperto: </h2>
+                <P style="font-size:medium;
+                text-align: right;">A Villa Carriero il posto auto <br> 
+                    non è un problema!
+                <br>
+            Puoi parcheggiare <br> all'interno della struttura!</P>
+
+            </div>
+        </article>
+        <!--s end of single services-->
+
+        <br>
+
+          <!--single services-->
+          <article class = "service">
+            <div class =" service-icon">
+                <span>
+                    <i class = "fas fa-wifi"></i>
+                </span>
+            </div>
+            <div class ="service-content">
+                <h2 style="text-align: right;">servizio WIFI:</h2>
+                <P style="font-size:medium; text-align: right;">Smart-working? <br> 
+                    nessun problema!
+                <br>
+            Ogni stanza del bilocale <br> è provvista di rete internet!</P>
+            </div>
+        </article>
+        <!--s end of single services-->
+
+        <br>
+
+        <!--single services-->
+        <article class = "service">
+          <div class =" service-icon">
+              <span>
+                <i class="fa fa-child" aria-hidden="true"></i>            
+            </span>
+          </div>
+          <div class ="service-content">
+              <h2 style="text-align: right;">Giostre per bambini:</h2>
+              <P style="font-size:medium; text-align: right;">Attrazioni per i più piccoli:<br> 
+                scivolo e altalena sono <br> 
+                due delle giostre 
+                <br>
+                che dispone Villa Carriero.
+              </P>
+          </div>
+      </article>
+      <!--s end of single services-->
+
+      <br>
+
+       <!--single services-->
+       <article class = "service">
+        <div class = "service-icon">
+            <span>
+                <i class="fas fa-water"></i>        </div>
+        <div class ="service-content">
+            <h2 style="text-align: right;">Piscina familiare:</h2>
+            <P style="font-size:medium; text-align: right;">Concedetevi un po' di relax<br> 
+               nella nostra piscina familiare <br> 
+              </P>
+        </div>
+    </article>
+    <!--s end of single services-->
+
+    </div>
+    </section>
+
+
+
+
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class = "rooms sec-width" id = "rooms">
+        <div class = "mio">
+            <h2>LA NOSTRA OFFERTA:</h2>
+        </div>
+        <div class = "rooms-container">
+
+
+            <!-- single room -->
+            <article class = "room">
+                <div class = "room-image">  
+                    <div class="w3-content w3-display-container">
+                        <img class="mySlides2" src="stanze/1.jpg">
+                        <img class="mySlides2" src="stanze/2.jpg">
+                        <img class="mySlides2" src="stanze/3.jpg">
+                        <img class="mySlides2" src="stanze/4.jpg">
+                        <img class="mySlides2" src="stanze/5.jpg">
+                        <img class="mySlides2" src="stanze/6.jpg">
+                      </div>
+
+                </div>
+                <div class = "room-text">
+                    <h3>Bilocale completamente arredato</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Wifi.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Cucina.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Aria condizionata.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Lavatrice.
+                        </li> <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Phon.
+                        </li>
+                    </ul>
+                    <p>Il nostro bilocale è completo di tutti i servizi: <br>
+                        un luminoso soggiorno con cucina attrezzata e tavolo dove poter passare dei momenti insieme, camera matrimonale e ampio bagno, con phon e lavatrice per sentirvi a casa.
+
+                        <br>
+                        
+                    </p>
+                   <!--- <p class = "rate">
+                  
+                    <span>€99.00 /</span> Per notte
+                    </p> --->
+                    <br>
+                    <a id="sweet" class="button buttonBello" href="#">prenota!</a>
+                </div>
+            </article>
+            <!-- end of single room -->
+
+
+
+
+
+             <!-- single room -->
+             <article class = "room">
+                <div class = "room-image">
+                    <div class="w3-content w3-display-container">
+                        <img class="mySlides3" src="stanze/1.jpg">
+                        <img class="mySlides3" src="stanze/2.jpg">
+                        <img class="mySlides3" src="stanze/3.jpg">
+                        <img class="mySlides3" src="stanze/4.jpg">
+                        <img class="mySlides3" src="stanze/5.jpg">
+                        <img class="mySlides3" src="stanze/6.jpg">
+                      
+                        <div class="w3-center w3-display-bottommiddle" style="width:100%">
+                          <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                          <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                          <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+                        </div>
+                      </div>
+                </div>
+                <div class = "room-text">
+                    <h3>Bilocale completamente arredato</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Wifi.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Cucina.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Aria condizionata.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Lavatrice.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Phon.
+                        </li>
+                    </ul>
+                    <p>IIl nostro bilocale è completo di tutti i servizi: <br>
+                        un luminoso soggiorno con cucina attrezzata e tavolo dove poter passare dei momenti insieme, camera matrimonale e ampio bagno, con phon e lavatrice per sentirvi a casa.
+
+                        <br>
+                        
+                    </p>
+                   <!--- <p class = "rate">
+                  
+                    <span>€99.00 /</span> Per notte
+                    </p> --->
+                    <br>
+                    <a id="ciao" class="button buttonBello" href="#">prenota!</a>
+                </div>
+            </article>
+            <!-- end of single room -->
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+<section class = "customers" id = "customers">
+<div class = "sec-width">
+    <div class = "mio">
+        <h2>I NOSTRI CLIENTI:</h2>
+    </div>
+    <div class = "customers-container">
+        <!-- single customer -->
+        <div class = "customer">
+            <div class = "rating">
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+            </div>
+            <h3>Lo adoro!</h3>
+            <p>Scendo a Lecce ogni mese per lavoro.
+                <br>con il servizio transfer messo a disposizione dalla struttura, arrivare dall'aeroporto di Brindisi è comodissimo!
+            </p>
+            <img src = "clienti/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg" alt = "customer image">
+            <span>Cristina, Roma</span>
+        </div>
+        <!-- end of single customer -->
+
+        <!-- single customer -->
+        <div class = "customer">
+            <div class = "rating">
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "far fa-star"></i></span>
+            </div>
+            <h3>Appartamento comfortevole</h3>
+            <p>A pochi passi sia da Lecce sia dal mare, cosa volere di più?  <br> mi sono sentito subito avvolto dal fascino di Villa Carriero!</p>
+            <img src = "clienti/ludovic-migneault-EZ4TYgXPNWk-unsplash.jpg" alt = "customer image">
+            <span>Niccolò, Napoli</span>
+        </div>
+        <!-- end of single customer -->
+
+        <!-- single customer -->
+        <div class = "customer">
+            <div class = "rating">
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+                <span><i class = "fas fa-star"></i></span>
+            </div>
+            <h3>Una garanzia</h3>
+            <p>Sono voluto scappare per un weekend con mia moglie e mio figlio piccolo, le giostre sono state una salvezza, ottimo servizio!</p>
+            <img src = "clienti/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt = "customer image">
+            <span>Gianni, Bergamo</span>
+        </div>
+        <!-- end of single customer -->
+
+    </div>
+</div>
+</section>
+    <!--end of body content-->
+
+    <!-- footer -->
+    <footer class = "footer">
+        <div class = "footer-container">
+            <div>
+                
+                <ul class = "social-icons">
+                    <li class = "flex">
+                        <i class = "fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class = "flex">
+                        <i class = "fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h2>Hai una domanda?
+                    <br> CONTATTACI!
+                </h2>
+                
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +338 13 75 110
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        VIA ISONZO 14, MONTERONI DI LECCE, 73047
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        mimina1905@gmail.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/sweetalert2@7.0.9/dist/sweetalert2.all.js"></script>
+
+<script type="text/javascript">
+
+
+jQuery("#sweet").click(function(event){
+event.preventDefault();
+swal('Per prenotare chiamare il numrero: +338 1375 110\noppure inviare una mail a: mimina1905@gmail.com');
+});
+
+
+jQuery("#ciao").click(function(event){
+event.preventDefault();
+console.log("Sweet");
+swal('Per prenotare chiamare il numrero: +338 1375 110\noppure inviare una mail a: mimina1905@gmail.com');
+});
+        </script>
+   </body>
+</html>
